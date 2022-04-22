@@ -1,6 +1,6 @@
-#Power Dolphins coola bibliotekssystem!
+# Power Dolphins coola bibliotekssystem!
 
-###uppgifts-spec: https://gist.github.com/zocom-christoffer-wallenberg/4a61ed6a17a658c8970d63eeeb552582
+### uppgifts-spec: https://gist.github.com/zocom-christoffer-wallenberg/4a61ed6a17a658c8970d63eeeb552582
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
