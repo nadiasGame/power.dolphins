@@ -1,9 +1,6 @@
-<<<<<<< Updated upstream
-=======
 import './Login.css'
 import Header from '../components/Header'
 
->>>>>>> Stashed changes
 function Login(){
 
   return(

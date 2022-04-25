@@ -6,8 +6,6 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-<<<<<<< Updated upstream
-=======
 const persistedState = localStorage.getItem('libraryState')
                        ? JSON.parse(localStorage.getItem('libraryState'))
                        : { books: [] }
@@ -22,8 +20,6 @@ store.subscribe(()=>{
   localStorage.setItem('libraryState', JSON.stringify(store.getState()))
 })
 
-
->>>>>>> Stashed changes
 
 root.render(
   <React.StrictMode>

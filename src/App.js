@@ -12,11 +12,8 @@ function App() {
 
           <Route path='/*' element={ <Home /> } />
           <Route path='/login' element={ <Login /> } />
-<<<<<<< Updated upstream
-=======
           <Route path='/admin' element={ <Admin /> } />
 
->>>>>>> Stashed changes
          </Routes>
         </div>
   );
