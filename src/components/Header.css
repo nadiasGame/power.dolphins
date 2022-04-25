@@ -1,0 +1,5 @@
+.HeaderWrapper{
+  background-color: DarkSlateGray;
+  display: flex;
+  justify-content: space-around;
+}
