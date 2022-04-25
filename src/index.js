@@ -6,16 +6,16 @@ import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 
-import cartReducer from './reducers/cartReducer';
+import booksReducer from './reducers/booksReducer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const persistedState = localStorage.getItem('libraryState')
                        ? JSON.parse(localStorage.getItem('libraryState'))
-                       : { cart: [] }
+                       : { books: [] }
 
 const store = createStore(
-  cartReducer,
+  booksReducer,
   persistedState,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
@@ -23,8 +23,6 @@ const store = createStore(
 store.subscribe(()=>{
   localStorage.setItem('libraryState', JSON.stringify(store.getState()))
 })
-
-
 
 root.render(
   <React.StrictMode>
