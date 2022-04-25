@@ -10,9 +10,9 @@ import booksReducer from './reducers/booksReducer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const persistedState = localStorage.getItem('libraryState')
+/* const persistedState = localStorage.getItem('libraryState')
                        ? JSON.parse(localStorage.getItem('libraryState'))
-                       : { books: [] }
+                       : { books: [] } */
 
 const store = createStore(
   booksReducer,
@@ -20,9 +20,9 @@ const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
 
-store.subscribe(()=>{
+/* store.subscribe(()=>{
   localStorage.setItem('libraryState', JSON.stringify(store.getState()))
-})
+}) */
 
 root.render(
   <React.StrictMode>
