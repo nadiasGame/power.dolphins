@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { createStore } from 'redux';
+import masterReducer from './reducers/masterReducer';
 import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
-
-import booksReducer from './reducers/booksReducer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -15,8 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
                        : { books: [] } */
 
 const store = createStore(
-  booksReducer,
-  persistedState,
+  masterReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
 

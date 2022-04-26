@@ -12,4 +12,11 @@ const removeBook = (id) => {
   }
 }
 
-export { addBook, removeBook }
+const editBook = (data) => {
+  return {
+    type: 'EDIT_BOOK',
+    payload: data
+  }
+}
+
+export { addBook, removeBook, editBook }
