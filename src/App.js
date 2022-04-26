@@ -12,9 +12,9 @@ function App() {
          <Routes>
 
           <Route path='/*' element={ <Home /> } />
-          <Route path='/login' element={ <Login /> } />
-          <Route path='/admin' element={ <Admin /> } />
-          <Route path='/profile' element={ <Profile /> } />
+          <Route path='/Login' element={ <Login /> } />
+          <Route path='/Admin' element={ <Admin /> } />
+          <Route path='/Profile' element={ <Profile /> } />
 
          </Routes>
         </div>
