@@ -1,17 +1,18 @@
 .BookWrapper {
-  background-color: burlywood;
-  margin: 2px;
-  padding: 2px;
-  border-style: solid;
+  background-color: white;
+  margin: 5px;
   width: 32%;
+  max-width: 390px;
   height: 30%;
+  display: flex;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .RatingAndPrice {
   display: flex;
   justify-content: space-evenly;
 }
-
 
 p {
   display: -webkit-box;
@@ -20,3 +21,40 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.imgPart {
+  width: 30%;
+  height: 230px;
+  border-radius: 3px 0px 0px 3px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px 0px 0px 3px;
+}
+
+.bookInfo {
+  padding: 3px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainText * {
+  margin: 0;
+}
+
+.mainText h4 {
+  margin-top: 1em;
+}
+
+.mainText h6 {
+  margin-top: 1.3em;
+}
+
+.mainText p {
+  margin-top: 1.6em;
+}
+
