@@ -9,6 +9,7 @@ const initialState = {
       password: 'admin',
       admin: true,
       keycardNumber: '1234567890',
+      cardPIN: '3758',
       borrowedBooks: [],
     },
     {
@@ -18,6 +19,7 @@ const initialState = {
       password: 'user',
       admin: false,
       keycardNumber: '0987654321',
+      cardPIN: '8147',
       borrowedBooks: [1,8,76,2],
     }
   ],
