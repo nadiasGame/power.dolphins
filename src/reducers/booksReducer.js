@@ -1,7 +1,7 @@
-import booksJson from '../books.json'
+import booksJson from '../Books.json'
 
 const initialState = {
-  books: [booksJson]
+  books: booksJson
 }
 
 const cartReducer = (state = initialState, action) => {
