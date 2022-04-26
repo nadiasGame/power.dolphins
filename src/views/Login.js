@@ -24,7 +24,11 @@ async function handleLoggin(){
   let user = users.find(user => user.email === emailInput.current.value && user.password === passwordInput.current.value)
   if(user){
     await dispatch(setLoggedInUser(user));
-    navigate('/admin');
+    if(user.admin == true){
+      navigate('/admin');
+    }else{
+      navigate('/profile');
+    }
   }else{
     alert("Login failed");
 }
@@ -35,11 +39,11 @@ async function handleLoggin(){
     <section>
     <Header />
     <p>login</p>
-    <section>
+    <form onSubmit={ handleLoggin }>
       <input type="text" ref={ emailInput }  placeholder="Email"/>
-      <input type="text" ref={ passwordInput } placeholder="Password"/>
+      <input type="password" ref={ passwordInput } placeholder="Password"/>
       <button onClick={ handleLoggin }>loggin</button>
-    </section>
+    </form>
     </section>
   )
 }
