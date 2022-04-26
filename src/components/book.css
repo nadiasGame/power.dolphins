@@ -1,0 +1,21 @@
+.BookWrapper {
+  background-color: burlywood;
+  margin: 3px;
+  padding: 3px;
+  border-style: solid;
+  width: 30%;
+  height: 30%;
+}
+
+.RatingAndPrice {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+p {
+  max-height: 4em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
