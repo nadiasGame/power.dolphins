@@ -2,7 +2,6 @@ import './book.css'
 
 function Book(props){
    const { book } = props;
-   console.log(book);
 
     return (
       <section className="BookWrapper">
