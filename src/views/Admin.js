@@ -1,7 +1,7 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { addBook } from '../actions/bookActions';
 import { addUser } from '../actions/userActions'
 
 import Header from '../components/Header';
@@ -9,6 +9,7 @@ import './Admin.css';
 
 function Admin(){
   const loggedInUser = useSelector((state) => { return state.loggedInUser}),
+        books = useSelector((state) => { return state.books}),
         dispatch = useDispatch(),
         navigate = useNavigate(),
         nameInput = useRef(null),
@@ -16,16 +17,36 @@ function Admin(){
         passwordInput = useRef(null),
         keycardNumberInput = useRef(null),
         cardPINInput = useRef(null),
+        title = useRef(""),
+        author = useRef(""),
+        description = useRef(""),
+        rating = useRef(""),
+        quantity = useRef(""),
+        price = useRef(""),
         [ newUser, setNewUser ] = useState();
 
-  function checkLoggedin(){
+  function checkLoggedIn(){
     if(loggedInUser === null){
       navigate('/home')
     }
   }
 
+  function addBookHandler() {
+    var book = {
+      id: books.length + 1,
+      title: title.current.value,
+      author: author.current.value,
+      description: description.current.value,
+      rating: rating.current.value,
+      quantity: quantity.current.value,
+      price: price.current.value
+    }
+
+    dispatch(addBook(book));
+  }
+
   useEffect(() => {
-    checkLoggedin();
+    checkLoggedIn();
   }, []);
 
   function handleOnChange(){
@@ -51,6 +72,16 @@ function Admin(){
     <section>
     <Header />
       <p>Admin</p>
+        <div className='addBook'>
+          <input className='addBookTitle' placeholder='Title' ref={title}></input>
+          <input className='addBookAuthor' placeholder='Author' ref={author}></input>
+          <input className='addBookDescription' placeholder='Description' ref={description}></input>
+
+          <input className='addBookRating' placeholder='Rating' ref={rating}></input>
+          <input className='addBookQuantity' placeholder='Quantity' ref={quantity}></input>
+          <input className='addBookPrice' placeholder='Price' ref={price}></input>
+          <button onClick={addBookHandler}>Add book</button>
+        </div>
 
         <section className="addUserForm" >
           <label>Namn:
