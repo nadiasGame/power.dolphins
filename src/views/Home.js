@@ -28,9 +28,15 @@ function Home(){
 
   return(
     <section>
-    <Header />
-      <p>Home</p>
-      <input type="text" placeholder="Search" ref={searchField} onChange={event => setQuery(event.target.value)} />
+    <div className='headerSearchHolder'>
+        <Header />
+        <div className='searchHolder'>
+          <input type="text" placeholder="Search" ref={searchField} onChange={event => setQuery(event.target.value)} />
+          <p>🔎</p>
+        </div>
+      </div>
+      <h1>Välkommen till Enuiterna's Bibliotek</h1>
+      <h3>Här är veckans mest populära böcker:</h3>
       <section className="BooksWrapper">
       { bookComponent }
       </section>
