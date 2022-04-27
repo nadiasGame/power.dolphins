@@ -17,7 +17,7 @@ function Login(){
 
 
 
-async function handleLoggin(){
+async function handleLogin(){
   if(emailInput.current.value === "" || passwordInput.current.value === ""){
     alert("fyll i fälten");
   }
@@ -39,10 +39,10 @@ async function handleLoggin(){
     <section>
     <Header />
     <h2>login</h2>
-    <form onSubmit={ handleLoggin } id="loginForm">
+    <form onSubmit={ handleLogin } id="loginForm">
       <input id="loginEmail" type="text" ref={ emailInput } placeholder="Email"/>
       <input id="loginPassword" type="password" ref={ passwordInput } placeholder="Password"/>
-      <button id="loginBtn" onClick={ handleLoggin }>loggin</button>
+      <button id="loginBtn" onClick={ handleLogin }>loggin</button>
     </form>
     </section>
   )
