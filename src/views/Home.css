@@ -58,5 +58,38 @@ header {
      margin-left: -2125px;
   }
 }
+#container {
+  width: 1000px;
+  overflow: hidden;
+  margin: 50px auto;
+  background: white;
+}
 
+.photobanner {
+  height: 233px;
+  width: 3550px;
+  margin: 0; padding: 0;
+  margin-bottom: 5px;
+  font-size: 0;
+}
+
+.photobanner img {
+    margin-bottom: 10px;
+    margin-right: 5px;
+    height: 233px;
+    width: 350px;
+}
+ 
+.first {
+  animation: bannermove 30s linear infinite; 
+}
+
+@keyframes bannermove {
+  0% {
+     margin-left: 0px;
+  }
+  100% {
+     margin-left: -2125px;
+  }
+}
  
