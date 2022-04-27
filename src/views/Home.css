@@ -8,3 +8,50 @@ body {
   justify-content:space-evenly;
   padding: 8px;
 }
+.photobanner {
+  margin: 0; padding: 0;}
+ 
+#container {
+ width: 1000px;
+ overflow: hidden;
+ margin: 50px auto;
+ background: white;
+}
+
+header {
+  width: 800px;
+  margin:  auto;
+ }
+  
+ header h1 {
+  text-align: center;
+  font: 100 60px/1.5 Helvetica, Verdana, sans-serif;
+  
+ }
+  
+ header p {
+  font: 100 15px/1.5 Helvetica, Verdana, sans-serif;
+  text-align: justify;
+ }
+  
+ .photobanner {
+  height: 233px;
+  width: 3550px;
+  margin-bottom: 80px;
+ }
+ 
+ .first {
+ animation: bannermove 30s linear infinite;
+   
+ }
+
+@keyframes bannermove {
+  0% {
+     margin-left: 0px;
+  }
+  100% {
+     margin-left: -2125px;
+  }
+}
+
+ 
