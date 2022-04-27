@@ -1,7 +1,20 @@
 .HeaderWrapper{
-  background-color: DarkSlateGray;
+  background-color: rgb(177, 208, 208);
   display: flex;
   justify-content: space-around;
+  padding: 10px;
+}
+
+.HeaderWrapper button {
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.HeaderWrapper button:hover {
+  text-decoration: underline;
 }
 
 .logoutButton {

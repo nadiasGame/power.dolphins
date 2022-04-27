@@ -1,3 +1,28 @@
-body{
-  background-color: slategray;
+#loginForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginEmail, #loginPassword, #loginBtn {
+  box-sizing: border-box;
+  display: inline;
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid darkgrey;
+  box-shadow: 1px 1px 3px rgb(188, 188, 188);
+  border-radius: 10px;
+  font-size: 1.2em;
+  background-color: transparent;
+}
+
+#loginEmail:focus, #loginPassword:focus, #loginBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#loginBtn {
+  cursor: pointer;
 }
