@@ -44,12 +44,14 @@ function Home(){
 </div>
 
       <p>Home</p>
-      <input type="text" placeholder="Search" ref={searchField} onChange={event => setQuery(event.target.value)} />
+    
+    <input type="text" placeholder="Search" ref={searchField} onChange={event => setQuery(event.target.value)} />
       <section className="BooksWrapper">
       { bookComponent }
       </section>
     </section>
   )
+  
 
 }
 
