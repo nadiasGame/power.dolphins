@@ -31,18 +31,18 @@ async function handleLogin(){
     }
   }else{
     alert("Login failed");
-}
+  }
 }
 
 
   return(
     <section>
     <Header />
-    <p>login</p>
-    <form onSubmit={ handleLogin }>
-      <input type="text" ref={ emailInput }  placeholder="Email"/>
-      <input type="password" ref={ passwordInput } placeholder="Password"/>
-      <button onClick={ handleLogin }>login</button>
+    <h2>login</h2>
+    <form onSubmit={ handleLogin } id="loginForm">
+      <input id="loginEmail" type="text" ref={ emailInput } placeholder="Email"/>
+      <input id="loginPassword" type="password" ref={ passwordInput } placeholder="Password"/>
+      <button id="loginBtn" onClick={ handleLogin }>loggin</button>
     </form>
     </section>
   )
