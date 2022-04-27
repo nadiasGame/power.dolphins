@@ -23,6 +23,7 @@ function Admin(){
         rating = useRef(""),
         quantity = useRef(""),
         price = useRef(""),
+        image = useRef(""),
         [ newUser, setNewUser ] = useState();
 
   function checkLoggedIn(){
@@ -39,7 +40,8 @@ function Admin(){
       description: description.current.value,
       rating: rating.current.value,
       quantity: quantity.current.value,
-      price: price.current.value
+      price: price.current.value,
+      imageLink: image.current.value
     }
 
     dispatch(addBook(book));
@@ -81,6 +83,8 @@ function Admin(){
           <input className='addBookRating' placeholder='Rating' ref={rating}></input>
           <input className='addBookQuantity' placeholder='Quantity' ref={quantity}></input>
           <input className='addBookPrice' placeholder='Price' ref={price}></input>
+
+          <input className="addBookImage" placeholder="Image Link" ref={image}></input>
           <button onClick={addBookHandler}>Add book</button>
         </div>
 
