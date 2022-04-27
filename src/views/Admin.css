@@ -1,0 +1,6 @@
+.addUserForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  align-items: flex-end;
+}

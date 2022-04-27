@@ -3,7 +3,6 @@ import booksJson from '../Books.json'
 const initialState = {
   users: [
     {
-      id: 1,
       name: 'Admin adminsson',
       email: 'admin@admin.se',
       password: 'admin',
@@ -13,7 +12,6 @@ const initialState = {
       borrowedBooks: [],
     },
     {
-      id: 2,
       name: 'User usersson',
       email: 'user@user.se',
       password: 'user',
