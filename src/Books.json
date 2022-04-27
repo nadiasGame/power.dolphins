@@ -7,7 +7,9 @@
       "Harry Potter has no idea how famous he is. That's because he's being raised by his miserable aunt and uncle who are terrified Harry will learn that he's really a wizard, just as his parents were. But everything changes when Harry is summoned to attend an infamous school for wizards, and he begins to discover some clues about his illustrious birthright. From the surprising way he is greeted by a lovable giant, to the unique curriculum and colorful faculty at his unusual school, Harry finds himself drawn deep inside a mystical world he never knew existed and closer to his own noble destiny.",
     "rating": 5,
     "quantity": 10,
-    "price": 690
+    "price": 690,
+    "imageLink":
+      "https://bookfetishist.files.wordpress.com/2020/12/images-14.jpg"
   },{
     "id": 2,
     "author": "J. R. R. Tolkien",
@@ -15,7 +17,9 @@
     "description": "The Lord of the Rings is an epic high fantasy novel written by English author and scholar J. R. R. Tolkien. The story began as a sequel to Tolkien's 1937 fantasy novel The Hobbit, but eventually developed into a much larger work. Written in stages between 1937 and 1949, The Lord of the Rings is one of the best-selling novels ever written, with over 150 million copies sold",
     "rating": 4,
     "quantity": 34,
-    "price": 499
+    "price": 499,
+    "imageLink":
+      "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/7/30/1406719709641/7e11c283-6f2b-4847-83bd-f1de6bf3735d-1360x2040.jpeg?width=700&quality=85&auto=format&fit=max&s=d0904fe58cf158cf1c17417692855aaa"
   }, 
   {
     "id": 3,
@@ -24,7 +28,9 @@
     "description": "The Shining is a horror novel by American author Stephen King. Published in 1977, it is King's third published novel and first hardback bestseller: the success of the book firmly established King as a preeminent author in the horror genre. ",
     "rating": 5,
     "quantity": 9,
-    "price": 690
+    "price": 690,
+    "imageLink":
+      "http://bukovero.com/wp-content/uploads/2016/07/Harry_Potter_and_the_Cursed_Child_Special_Rehearsal_Edition_Book_Cover.jpg"
   },
   {
     "id": 4,
@@ -33,7 +39,9 @@
     "description": "The Da Vinci Code is a 2003 mystery novel by Dan Brown. It is Brown's third novel and the first published in seven years. The story follows the life of Robert Langdon, a banker and cryptologist who is the sole survivor of",
     "rating": 4,
     "quantity": 87,
-    "price": 325
+    "price": 325,
+    "imageLink":
+      "https://images.squarespace-cdn.com/content/v1/58faa30ee6f2e151cda11af0/1521488917720-NDWVJEBRQI4ZPO7FFYMH/Graylings+book+cover+art.jpg"
   },
   {
     "id": 5,
@@ -42,7 +50,9 @@
     "description": "Harry Potter and the Chamber of Secrets is a fantasy novel written by British author J. K. Rowling and the second novel in the Harry Potter series. It follows Harry Potter, a young wizard, in his effort to discover a mysterious series of objects that enable him to overcome his own fear of being a",
     "rating": 5,
     "quantity": 2,
-    "price": 987
+    "price": 987,
+    "imageLink":
+      "https://thebookcoverdesigner.com/wp-content/uploads/2019/05/Book-Cover-11aa.jpg"
   },
   {
     "id": 6,
@@ -51,7 +61,9 @@
     "description": "Harry Potter and the Prisoner of Azkaban is a fantasy novel written by British author J. K. Rowling and the third novel in the Harry Potter series. It follows Harry Potter, a young wizard, in his third year at Hogwarts School of Witchcraft and Wizardry. The plot follows Harry's struggle against Lord Voldemort, a dark wizard who",
     "rating": 4,
     "quantity": 127,
-    "price": 1230
+    "price": 1230,
+    "imageLink":
+      "https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/1631/posts/32582/image/Book%20Cover%20Template%20for%20Crime%20Thriller%20Novel%20copy.jpg"
   },
   {
     "id": 7,
@@ -60,7 +72,9 @@
     "description": "Harry Potter and the Goblet of Fire is a fantasy novel written by British author J. K. Rowling and the fourth novel in the Harry Potter series. It follows Harry Potter, a young wizard, in his fourth year at Hogwarts School of Witchcraft and Wizardry. The story begins when Harry discovers a mysterious book written by the",
     "rating": 5,
     "quantity": 11,
-    "price": 454
+    "price": 454,
+    "imageLink":
+      "https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b3BlbiUyMGJvb2t8ZW58MHx8MHx8&w=1000&q=80"
   },
   {
     "id": 8,
@@ -69,7 +83,9 @@
     "description": "Pippi långstrump is a children's book by Swedish author Astrid Lindgren. It is the first book in the Pippi långstrump series and is the first book in the series to be published in Swedish. It was first published in Sweden in the year 2000.",
     "rating": 5,
     "quantity": 69,
-    "price": 3
+    "price": 3,
+    "imageLink":
+      "https://image.shutterstock.com/image-vector/open-book-vector-clipart-silhouette-260nw-358417976.jpg"
   },
   {
     "id": 9,
@@ -78,7 +94,9 @@
     "description": "It is a 1986 horror novel by American author Stephen King. The novel is based on a 1986 Stephen King novel of the same name, first published in 1987 under the pen name of Bill Skaaren. It was adapted into a film and television series, and the novel's antagonist, Michael Myers, is the title character",
     "rating": 4,
     "quantity": 12,
-    "price": 127
+    "price": 127,
+    "imageLink":
+      "http://smartmobilestudio.com/wp-content/uploads/2012/06/leather-book-preview.png"
   },
   {
     "id": 10,
@@ -87,7 +105,9 @@
     "description": "The Shawshank Redemption is a 1994 American crime drama film written and directed by Frank Darabont. It is based on the Stephen King novella Rita Hayworth and is loosely based on the Stephen King novel Rita Hayworth. The film stars Tim Robbins in the lead role, Morgan Freeman in the supporting",
     "rating": 3,
     "quantity": 59,
-    "price": 320
+    "price": 320,
+    "imageLink":
+      "https://upload.wikimedia.org/wikipedia/commons/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg"
   },
   {
     "id": 11,
@@ -96,7 +116,9 @@
     "description": "The Stand is a post-apocalyptic horror novel by American author Stephen King. It was first published on August 1, 1988, and is considered one of King's best-selling novels. The novel is told in the form of a zombie apocalypse, with the protagonist, protagonist, and protagonist",
     "rating": 4,
     "quantity": 89,
-    "price": 654
+    "price": 654,
+    "imageLink":
+      "https://media.istockphoto.com/photos/blank-open-book-on-wood-background-picture-id1302428934?b=1&k=20&m=1302428934&s=170667a&w=0&h=UzgMqx5iO39CJcDp4n15zEEpsQ-K93avlEHoi8_lDzg="
   },
   {
     "id": 12,
@@ -105,7 +127,9 @@
     "description": "Carrie is a 1986 horror novel by American author Stephen King. It is his second published novel and the first in the King series to be adapted into a film. The novel is set in the fictional town of Carrie, Maine, and follows the life of the young",
     "rating": 2,
     "quantity": 832,
-    "price": 987
+    "price": 987,
+    "imageLink":
+      "https://media.gettyimages.com/photos/stack-of-books-picture-id157482029?s=612x612"
   },
   {
     "id": 13,
@@ -114,7 +138,9 @@
     "description": "Rush Hour 2 is a 2002 American crime thriller film directed by Chris Weitz. It is the sequel to Rush Hour and the second film in the Rush Hour franchise. The film stars Chris Tucker as the title character, who is a police officer who is assigned to a",
     "rating": 4,
     "quantity": 112,
-    "price": 449
+    "price": 449,
+    "imageLink":
+      "https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip"
   }, 
   {
     "id": 14,
@@ -123,151 +149,142 @@
     "description": "Indiana Jones and the Kingdom of the Crystal Skull is a 2001 American epic adventure film directed by Steven Spielberg and written by Steven Spielberg and David Koepp. It is the third installment in the Indiana Jones franchise and the first in the series to be released in the United States",
     "rating": 2,
     "quantity": 431,
-    "price": 18
+    "price": 18,
+    "imageLink":
+      "https://www.adazing.com/wp-content/uploads/2019/02/open-book-clipart-03.png"
   },
   {
     "id": 15,
     "author": "Chinua Achebe",
     "title": "Things Fall Apart",
     "country": "Nigeria",
-    "imageLink": "images/things-fall-apart.jpg",
     "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
     "rating": 1,
     "quantity": 14,
-    "price": 89
+    "price": 89,
+    "imageLink":
+      "https://images.twinkl.co.uk/tr/image/upload/t_illustration/illustation/book.png"
   },
   {
     "id": 16,
     "author": "Hans Christian Andersen",
     "country": "Denmark",
-    "imageLink": "images/fairy-tales.jpg",
-    "language": "Danish",
-    "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n",
     "title": "Fairy tales",
     "rating": 5,
     "quantity": 65,
-    "price": 4
+    "price": 4,
+    "imageLink":
+      "https://media.gettyimages.com/photos/single-red-book-on-a-white-surface-picture-id173015527?s=612x612"
   },
   {
     "id": 17,
     "author": "Dante Alighieri",
     "country": "Italy",
-    "imageLink": "images/the-divine-comedy.jpg",
-    "language": "Italian",
-    "link": "https://en.wikipedia.org/wiki/Divine_Comedy\n",
     "title": "The Divine Comedy",
     "rating": 5,
     "quantity": 58,
-    "price": 985
+    "price": 985,
+    "imageLink":
+      "https://thumbs.dreamstime.com/b/open-book-19523116.jpg"
   },
   {
     "id": 18,
     "author": "Unknown",
     "country": "Sumer and Akkadian Empire",
-    "imageLink": "images/the-epic-of-gilgamesh.jpg",
-    "language": "Akkadian",
-    "link": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh\n",
     "title": "The Epic Of Gilgamesh",
     "rating": 3,
     "quantity": 43,
-    "price": 418
+    "price": 418,
+    "imageLink":
+      "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_400,q_75,w_640/https://assets.simpleviewinc.com/simpleview/image/upload/crm/cheyenne/books20_a9658204-5056-b365-ab935984fd6ec573.jpg"
   },
   {
     "id": 19,
     "author": "Unknown",
     "country": "Achaemenid Empire",
-    "imageLink": "images/the-book-of-job.jpg",
-    "language": "Hebrew",
-    "link": "https://en.wikipedia.org/wiki/Book_of_Job\n",
     "title": "The Book Of Job",
     "rating": 2,
     "quantity": 95,
-    "price": 564
+    "price": 564,
+    "imageLink":
+      "https://cdn.pixabay.com/photo/2015/11/19/21/10/glasses-1052010__340.jpg"
   },
   {
     "id": 20,
     "author": "Unknown",
     "country": "India/Iran/Iraq/Egypt/Tajikistan",
-    "imageLink": "images/one-thousand-and-one-nights.jpg",
-    "language": "Arabic",
-    "link": "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights\n",
     "title": "One Thousand and One Nights",
     "rating": 1,
     "quantity": 41,
-    "price": 846
+    "price": 846,
+    "imageLink":
+      "https://dictionary.cambridge.org/fr/images/thumb/book_noun_001_01679.jpg?version=5.0.234"
   },
   {
     "id": 21,
     "author": "Unknown",
     "country": "Iceland",
-    "imageLink": "images/njals-saga.jpg",
-    "language": "Old Norse",
-    "link": "https://en.wikipedia.org/wiki/Nj%C3%A1ls_saga\n",
     "title": "Nj\u00e1l's Saga",
     "rating": 3,
     "quantity": 7,
-    "price": 47
+    "price": 47,
+    "imageLink":
+      "https://imageio.forbes.com/specials-images/imageserve/5f85be4ed0acaafe77436710/Stack-books-isolated-3d-rendering/960x0.jpg?fit=bounds&format=jpg&width=960"
   },
   {
     "id": 22,
     "author": "Jane Austen",
     "country": "United Kingdom",
-    "imageLink": "images/pride-and-prejudice.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Pride_and_Prejudice\n",
     "title": "Pride and Prejudice",
     "rating": 2,
     "quantity": 89,
-    "price": 987
+    "price": 987,
+    "imageLink":
+      "https://macmillan-dam.captureweb.co.uk/cdn/macmillan/previews/439664/d2600cec4c0f09bf8e6187a83a066343/0/14665546cf5662d409143d004ffc0c54/131898933.jpg"
   },
   {
     "id": 23,
     "author": "Honor\u00e9 de Balzac",
     "country": "France",
-    "imageLink": "images/le-pere-goriot.jpg",
-    "language": "French",
-    "link": "https://en.wikipedia.org/wiki/Le_P%C3%A8re_Goriot\n",
     "title": "Le P\u00e8re Goriot",
     "rating": 5,
     "quantity": 63,
-    "price": 123
+    "price": 123,
+    "imageLink":
+      "https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg"
   },
   {
     "id": 24,
     "author": "Samuel Beckett",
     "country": "Republic of Ireland",
-    "imageLink": "images/molloy-malone-dies-the-unnamable.jpg",
-    "language": "French, English",
-    "link": "https://en.wikipedia.org/wiki/Molloy_(novel)\n",
     "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
     "rating": 3,
     "quantity": 86,
-    "price": 245
+    "price": 245,
+    "imageLink":
+      "https://cdn.picpng.com/book/photo-book-30955.png"
   },
   {
     "id": 25,
     "author": "Giovanni Boccaccio",
     "country": "Italy",
-    "imageLink": "images/the-decameron.jpg",
-    "language": "Italian",
-    "link": "https://en.wikipedia.org/wiki/The_Decameron\n",
     "title": "The Decameron",
     "rating": 3,
     "quantity": 12,
-    "price": 983
+    "price": 983,
+    "imageLink":
+      "https://yazidharoun.files.wordpress.com/2020/11/how-to-format-a-book-3.jpg"
   },
   {
     "id": 26,
     "author": "Jorge Luis Borges",
     "country": "Argentina",
-    "imageLink": "images/ficciones.jpg",
-    "language": "Spanish",
-    "link": "https://en.wikipedia.org/wiki/Ficciones\n",
     "title": "Ficciones",
     "rating": 3,
     "quantity": 93,
-    "price": 974
+    "price": 974,
+    "imageLink":
+      "https://www.collinsdictionary.com/images/full/book_181404689_1000.jpg"
   },
   {
     "id": 27,
@@ -277,6 +294,8 @@
     "title": "THE ETERNAL REDEMPTION OF JANE ANNE MURDOCK",
     "rating": 666,
     "quantity": 34,
-    "price": "Your soul"
+    "price": "Your soul",
+    "imageLink":
+      "https://daisy.org/wp-content/uploads/2018/11/book-dark-enlightenment-1029141-1024x683.jpg"
   }
 ]
