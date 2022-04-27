@@ -72,6 +72,7 @@ function Admin(){
     <section>
     <Header />
       <p>Admin</p>
+      <div className='addDiv'>
         <div className='addBook'>
           <input className='addBookTitle' placeholder='Title' ref={title}></input>
           <input className='addBookAuthor' placeholder='Author' ref={author}></input>
@@ -102,7 +103,7 @@ function Admin(){
           <button onClick={ addUserHandler }>Lägg till andvändare</button>
         </section>
 
-
+      </div>
     </section>
   )
 }
