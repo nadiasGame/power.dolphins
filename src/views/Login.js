@@ -42,7 +42,7 @@ async function handleLoggin(){
     <form onSubmit={ handleLoggin }>
       <input type="text" ref={ emailInput }  placeholder="Email"/>
       <input type="password" ref={ passwordInput } placeholder="Password"/>
-      <button onClick={ handleLoggin }>login</button>
+      <button onClick={ handleLoggin }>loggin</button>
     </form>
     </section>
   )
