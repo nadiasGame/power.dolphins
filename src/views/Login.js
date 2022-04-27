@@ -20,6 +20,7 @@ function Login(){
 async function handleLogin(){
   if(emailInput.current.value === "" || passwordInput.current.value === ""){
     alert("fyll i fälten");
+    return;
   }
   let user = users.find(user => user.email === emailInput.current.value && user.password === passwordInput.current.value)
   if(user){
@@ -42,7 +43,7 @@ async function handleLogin(){
     <form onSubmit={ handleLogin } id="loginForm">
       <input id="loginEmail" type="text" ref={ emailInput } placeholder="Email"/>
       <input id="loginPassword" type="password" ref={ passwordInput } placeholder="Password"/>
-      <button id="loginBtn" onClick={ handleLogin }>loggin</button>
+      <button id="loginBtn">login</button>
     </form>
     </section>
   )

@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-around;
   padding: 10px;
+  width: 100%;
 }
 
 .HeaderWrapper button {
@@ -17,6 +18,39 @@
   text-decoration: underline;
 }
 
-.logoutButton {
+.headerSearchHolder {
+  width: 100vw;
+  display: flex;
 }
 
+.searchHolder {
+  background-color: rgb(177, 208, 208);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  position: relative;
+} 
+
+.searchHolder input {
+  border: 1px solid black;
+  background-color: transparent;
+  font-size: 1.2em;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px 10px;
+  z-index: 1;
+}
+
+.searchHolder input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.searchHolder p {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  margin: 0;
+  font-size: 1.4em;
+  z-index: 0;
+}
