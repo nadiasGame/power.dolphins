@@ -41,7 +41,7 @@ async function handleLogin(){
     <Header />
     <h2>login</h2>
     <form onSubmit={ handleLogin } id="loginForm">
-      <input id="loginEmail" type="text" ref={ emailInput } placeholder="Email"/>
+      <input id="loginEmail" type="text" ref={ emailInput } placeholder="Email" autoFocus />
       <input id="loginPassword" type="password" ref={ passwordInput } placeholder="Password"/>
       <button id="loginBtn">login</button>
     </form>
