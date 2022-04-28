@@ -7,6 +7,7 @@ import Picture1 from '../Assets/05a4cac6953fed0c2c835324f3fdf92d.jpeg'
 import Picture2 from '../Assets/black_button_books_-_big_book_of_faces_thumb.jpeg'
 import Picture3 from '../Assets/nedladdning.jpeg'
 import Picture4 from '../Assets/images.jpeg'
+import RickAstley from '../Assets/X2Download.com-Rick Astley - Never Gonna Give You Up (Official Music Video).mp4'
 import Picture5 from '../Assets/integrado-book-donation-forgotten-books-print-371572-adeevee.jpeg'
 import Picture6 from '../Assets/book.jpeg'
 import Picture7 from '../Assets/find-your-book-social-media-post-mockup-bookcrossing-bookshop-advertising-web-banner-design-template-social-media-booster-content-layout-promotion-poster-print-ads-with-flat-illustrations-700-179342860.jpeg'
@@ -53,9 +54,18 @@ function Home(){
           <img src={Picture2} alt="books" />
           <img src={Picture3} alt="books" />
           <img src={Picture4} alt="books" />
-          <img src={Picture5} alt="books" />
+          <div>
+            <h2 style={{animation: "blink 1s infinite"}}>Varning varning!</h2>
+            <p>Har du lånat några böcker på sistone?</p>
+            <marquee>TRODDE INTE DET VA</marquee>
+            <p>Åk till ditt närmaste bibliotek idag och fixa det då...!</p>
+            <marquee direction="up">Kan du läsa detta????</marquee>
+          </div>
           <img src={Picture6} alt="books" />
-          <img src={Picture7} alt="books" />
+          <video className="rickAstley" controls autoPlay muted loop>
+            <source src={RickAstley} type="video/mp4" />
+            Your browser does not support the video tag or format.
+          </video>
           <img src={Picture8} alt="books" />
           <img src={Picture9} alt="books" />
           <img src={Picture10} alt="books" />
