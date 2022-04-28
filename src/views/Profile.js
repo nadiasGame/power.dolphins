@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react'
 
 import Header from '../components/Header';
-import Book from '../components/book';
 import './Profile.css';
 
 function Profile(){
@@ -24,16 +23,17 @@ function Profile(){
 
   const borrowedBooksList = books.filter((book) => {
   for(let i = 0; i < loggedInUser.borrowedBooks.length; i++){
-    if(loggedInUser.borrowedBooks[i] === book.id){
+    if(loggedInUser.borrowedBooks[i].bookId === book.id){
       return book;
     }
   }
   });
-
+  
   const bookComponent = borrowedBooksList.map((bookItem, index) => {
     return  <li key={index}>
               <p>{bookItem.title}</p>
               <p>{bookItem.author}</p>
+              <p>{loggedInUser.borrowedBooks[index].dueDate.split("T")[0] }</p>
             </li>
   });
 
