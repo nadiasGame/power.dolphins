@@ -9,47 +9,49 @@ body {
   padding: 8px;
 }
 
-@keyframes bannermove {
-  0% {
-     margin-left: 0px;
-  }
-  100% {
-     margin-left: -2125px;
-  }
-}
-
 #container {
   width: 1000px;
   overflow: hidden;
-  margin: 50px auto;
+  margin: 25px auto;
   background: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .photobanner {
-  height: 233px;
+  height: 238px;
   width: 3550px;
   margin: 0; padding: 0;
   margin-bottom: 5px;
   font-size: 0;
+  text-align: unset;
+}
+
+.photobanner:hover .first {
+  animation-play-state: paused;
 }
 
 .photobanner img {
-  margin-bottom: 10px;
-  margin-right: 5px;
+  margin: 5px;
   height: 233px;
   width: 350px;
+  border-radius: 3px;
+  margin-left: 0px;
 }
  
 .first {
-  animation: bannermove 30s linear infinite; 
+  animation: bannermove 50s linear infinite; 
 }
 
 @keyframes bannermove {
   0% {
      margin-left: 0px;
   }
+  50% {
+    margin-left: -5145px;
+  }
   100% {
-     margin-left: -2125px;
+    margin-left: 0px;
   }
 }
  
