@@ -18,7 +18,7 @@ const initialState = {
       admin: false,
       keycardNumber: '0987654321',
       cardPIN: '8147',
-      borrowedBooks: [1,8,76,2],
+      borrowedBooks: [{bookId: 1, dueDate: "2022-05-28T12:40:40.130Z"},{bookId: 8, dueDate: "2022-05-28T12:40:40.130Z"},{bookId: 2, dueDate: "2022-05-28T12:40:40.130Z"}],
     }
   ],
   loggedInUser: null,
@@ -71,46 +71,60 @@ const masterReducer = (state = initialState, action) => {
           }
         })
       }
-    case 'BORROW_BOOK':
+    case 'BORROW_RETURN_BOOK':
+      //find user in users by action.payload.keycardNumber,
+      //find book in books by action.payload.bookId
+      //if user.borrowedBooks.includes(action.payload.bookId)
+      // remove book from user.borrowedBooks
+      // ++ book.quantity in books
+      //else
+      //  add book to user.borrowedBooks
+      // -- book.quantity in books
       var currentDate=new Date();
       currentDate.setDate(currentDate.getDate()+ 30);
 
+      var date = new Date(); // Now
+      date.setDate(date.getDate() + 30); // Set now + 30 days as the new date
+      
+      let userHasBorrowedBookAlready = state.users.find(user => user.keycardNumber === action.payload.keycardNumber).borrowedBooks.includes(Number(action.payload.bookId))
       return {
         ...state,
-        books: state.books.map(book => {
-          if (book.id === action.payload.bookId) {
-            book.quantity--;
-            return book
-          } else {
-            return book
-          }
-        }),
         users: state.users.map(user => {
           if (user.keycardNumber === action.payload.keycardNumber) {
-            user.borrowedBooks.push({bookId: action.payload.bookId, date: currentDate})
-            return user
+            if(user.cardPIN === action.payload.cardPIN){
+              if (userHasBorrowedBookAlready) {
+                return {
+                  ...user,
+                  borrowedBooks: user.borrowedBooks.filter(bookId => bookId !== Number(action.payload.bookId))
+                }
+              } else {
+                return {
+                  ...user,
+                  borrowedBooks: [...user.borrowedBooks, {bookId: Number(action.payload.bookId), dueDate: date}]
+                }
+              }
+            } else {
+              return user
+            }
           } else {
             return user
-          }
-        })
-      }
-    case 'RETURN_BOOK':
-      return {
-        ...state,
-        books: state.books.map(book => {
-          if (book.id === action.payload.bookId) {
-            book.quantity++;
-            return book
-          } else {
-            return book
           }
         }),
-        users: state.users.map(user => {
-          if (user.keycardNumber === action.payload.keycardNumber) {
-            user.borrowedBooks = user.borrowedBooks.filter(book => book.bookId !== action.payload.bookId)
-            return user
+        books: state.books.map(book => {
+          if (book.id === action.payload.bookId) {
+            if (userHasBorrowedBookAlready) {
+              return {
+                ...book,
+                quantity: book.quantity + 1
+              }
+            } else {
+              return {
+                ...book,
+                quantity: book.quantity - 1
+              }
+            }
           } else {
-            return user
+            return book
           }
         })
       }

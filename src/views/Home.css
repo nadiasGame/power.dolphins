@@ -20,27 +20,33 @@ body {
 
 .photobanner {
   height: 238px;
-  width: 3550px;
   margin: 0; padding: 0;
   margin-bottom: 5px;
-  font-size: 0;
   text-align: unset;
+  display: flex;
 }
 
 .photobanner:hover .first {
   animation-play-state: paused;
 }
 
-.photobanner img {
+.photobanner img, .photobanner div, .photobanner video {
   margin: 5px;
-  height: 233px;
-  width: 350px;
+  height: 233px !important;
+  width: 350px !important;
   border-radius: 3px;
   margin-left: 0px;
+  flex-shrink: 0;
+}
+
+.photobanner source
+
+.photobanner div {
+  display: inline-block;
 }
  
 .first {
-  animation: bannermove 50s linear infinite; 
+  animation: bannermove 30s linear infinite; 
 }
 
 @keyframes bannermove {
@@ -48,7 +54,7 @@ body {
      margin-left: 0px;
   }
   50% {
-    margin-left: -5145px;
+    margin-left: -2550px;
   }
   100% {
     margin-left: 0px;
