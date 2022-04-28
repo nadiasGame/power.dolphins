@@ -11,20 +11,6 @@ function Profile(){
         books = useSelector((state) => { return state.books }),
         navigate = useNavigate();
 
-  const borrowedBooksList = books.filter((book) => {
-  for(let i = 0; i < loggedInUser.borrowedBooks.length; i++){
-    if(loggedInUser.borrowedBooks[i] === book.id){
-      return book;
-    }
-  }
-  });
-
-  const bookComponent = borrowedBooksList.map((bookItem, index) => {
-    return <li key={index}>
-      <p>{bookItem.title}</p>
-      <p>{bookItem.author}</p></li>
-  });
-
   function checkLogin(){
     if(loggedInUser === null){
       navigate('/')
@@ -34,6 +20,22 @@ function Profile(){
   useEffect(() => {
     checkLogin();
   }, []);
+
+
+  const borrowedBooksList = books.filter((book) => {
+  for(let i = 0; i < loggedInUser.borrowedBooks.length; i++){
+    if(loggedInUser.borrowedBooks[i] === book.id){
+      return book;
+    }
+  }
+  });
+
+  const bookComponent = borrowedBooksList.map((bookItem, index) => {
+    return  <li key={index}>
+              <p>{bookItem.title}</p>
+              <p>{bookItem.author}</p>
+            </li>
+  });
 
   return(
     <div>
