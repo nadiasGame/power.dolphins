@@ -9,14 +9,14 @@ function Profile(){
   const loggedInUser = useSelector((state) => { return state.loggedInUser});
   const navigate = useNavigate();
 
-  function cheackLoggin(){
+  function checkLogin(){
     if(loggedInUser === null){
-      navigate('/home')
+      navigate('/')
     }
   }
 
   useEffect(() => {
-    cheackLoggin();
+    checkLogin();
   }, []);
 
   return(
