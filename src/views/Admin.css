@@ -16,3 +16,10 @@
   display: flex;
   justify-content: space-around;
 }
+
+.editUserDiv {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  align-items: flex-end;
+}

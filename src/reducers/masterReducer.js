@@ -36,13 +36,13 @@ const masterReducer = (state = initialState, action) => {
     case 'REMOVE_USER':
       return {
         ...state,
-        users: state.users.filter(user => user.id !== action.payload)
+        users: state.users.filter(user => user.email !== action.payload)
       }
     case 'EDIT_USER':
       return {
         ...state,
         users: state.users.map(user => {
-          if (user.id === action.payload.id) {
+          if (user.email === action.payload.email) {
             return action.payload
           } else {
             return user

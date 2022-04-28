@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 import { addBook } from '../actions/bookActions';
-import { addUser } from '../actions/userActions'
+import { addUser, editUser } from '../actions/userActions'
 
 import Header from '../components/Header';
 import './Admin.css';
@@ -10,6 +10,7 @@ import './Admin.css';
 function Admin(){
   const loggedInUser = useSelector((state) => { return state.loggedInUser}),
         books = useSelector((state) => { return state.books}),
+        users = useSelector((state) => { return state.users}),
         dispatch = useDispatch(),
         navigate = useNavigate(),
         nameInput = useRef(null),
@@ -23,7 +24,17 @@ function Admin(){
         rating = useRef(""),
         quantity = useRef(""),
         price = useRef(""),
-        [ newUser, setNewUser ] = useState();
+        [ newUser, setNewUser ] = useState(),
+        [ editUserState, setEditUserState ] = useState({
+              name: "",
+              email: "",
+              password: "",
+              admin: false,
+              keycardNumber: "",
+              cardPIN: "",
+              borrowedBooks: [],
+        });
+
 
   function checkLoggedIn(){
     if(loggedInUser === null){
@@ -68,16 +79,36 @@ function Admin(){
     dispatch(addUser(newUser));
   }
 
+  function searchUser(event){
+    const foundUser = users.filter((user) => {
+      if(event.target.value === user.email){
+        return user;
+      }
+    })
+    console.log(foundUser);
+  }
+
+  function editUserHandler(event){
+    setEditUserState({...editUserState, [event.target.id]:event.target.value});
+    console.log(editUserState)
+  }
+
+  function editUserButton(){
+    dispatch(editUser(editUserState));
+    console.log(editUserState);
+  };
+
+
   return(
     <section>
     <Header />
       <p>Admin</p>
       <div className='addDiv'>
+
         <div className='addBook'>
           <input className='addBookTitle' placeholder='Title' ref={title}></input>
           <input className='addBookAuthor' placeholder='Author' ref={author}></input>
           <input className='addBookDescription' placeholder='Description' ref={description}></input>
-
           <input className='addBookRating' placeholder='Rating' ref={rating}></input>
           <input className='addBookQuantity' placeholder='Quantity' ref={quantity}></input>
           <input className='addBookPrice' placeholder='Price' ref={price}></input>
@@ -103,6 +134,31 @@ function Admin(){
           <button onClick={ addUserHandler }>Lägg till andvändare</button>
         </section>
 
+      </div>
+
+      <div className="editUserDiv">
+        <p>Sök efter andvändares Email</p>
+        <label>Email:
+          <input placeholder="email" onChange={ searchUser }/>
+        </label>
+
+        <p>Skriv in den nya informationen</p>
+        <label>Namn:
+          <input id="name" onChange={ editUserHandler } placeholder="name" />
+        </label>
+        <label>Email:
+          <input id="email" onChange={ editUserHandler } placeholder="email" />
+        </label>
+        <label>Lösenord:
+          <input id="password" onChange={ editUserHandler } placeholder="Lösenord" />
+        </label>
+        <label>Kortnummer:
+          <input id="keycardNumber" onChange={ editUserHandler } placeholder="Kortnummer" />
+        </label>
+        <label>Kort Pin:
+          <input id="cardPIN" onChange={ editUserHandler } placeholder="Kort Pin" />
+        </label>
+        <button onClick={ editUserButton }>uppdatera info</button>
       </div>
     </section>
   )
