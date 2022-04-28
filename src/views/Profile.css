@@ -1,0 +1,9 @@
+.borrowedBooksSection {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+}
+
+.borrowedBooksSection ul p {
+  font-size: 0.8em;
+}
