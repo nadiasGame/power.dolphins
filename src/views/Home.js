@@ -41,7 +41,7 @@ function Home(){
     <div className='headerSearchHolder'>
         <Header />
         <div className='searchHolder'>
-          <input type="text" placeholder="Search" ref={searchField} onChange={event => setQuery(event.target.value)} />
+          <input type="text" placeholder="Sök" ref={searchField} onChange={event => setQuery(event.target.value)} />
           <p>🔎</p>
         </div>
       </div>

@@ -60,11 +60,6 @@ const masterReducer = (state = initialState, action) => {
         ...state,
         books: [...state.books, action.payload]
       }
-    case 'REMOVE_BOOK':
-      return {
-        ...state,
-        books: state.books.filter(book => book.id !== action.payload)
-      }
     case 'EDIT_BOOK':
       return {
         ...state,
@@ -76,7 +71,26 @@ const masterReducer = (state = initialState, action) => {
           }
         })
       }
-
+    case 'BORROW_BOOK':
+      return {
+        ...state,
+        books: state.books.map(book => {
+          if (book.id === action.payload.bookId) {
+            book.quantity--;
+            return book
+          } else {
+            return book
+          }
+        }),
+        users: state.users.map(user => {
+          if (user.keycardNumber === action.payload.keycardNumber) {
+            user.borrowedBooks.push(action.payload.bookId);
+            return user
+          } else {
+            return user
+          }
+        })
+      }
     default:
       return state
   }
