@@ -5,13 +5,6 @@ const addBook = (data) => {
   }
 }
 
-const removeBook = (id) => {
-  return {
-    type: 'REMOVE_BOOK',
-    payload: id
-  }
-}
-
 const editBook = (data) => {
   return {
     type: 'EDIT_BOOK',
@@ -19,4 +12,11 @@ const editBook = (data) => {
   }
 }
 
-export { addBook, removeBook, editBook }
+const borrowBook = (data) => {
+  return {
+    type: 'BORROW_BOOK',
+    payload: data
+  }
+}
+
+export { addBook, editBook, borrowBook }

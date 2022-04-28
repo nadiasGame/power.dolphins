@@ -17,15 +17,15 @@ function Header(){
   function logout(){
     dispatch(setLoggedInUser(null));
     logoutBtn.current.style.display = 'none';
-    navigate('/Home');
+    navigate('/');
   }
 
   if(loggedIn === null){
-    buttonText = "Login";
-  }else if(loggedIn.admin == true){
+    buttonText = "Inloggning";
+  }else if(loggedIn.admin === true){
     buttonText = "Admin";
-  }else if(loggedIn.admin == false){
-    buttonText = "Profile"
+  }else if(loggedIn.admin === false){
+    buttonText = "Profil";
   }
 
 useEffect(() => {
@@ -37,10 +37,10 @@ useEffect(() => {
 
   return(
     <section className="HeaderWrapper">
-      <button onClick={ nav }>Home</button>
+      <button onClick={ nav }>Hem</button>
       <button onClick={ nav }>{ buttonText }</button>
       <section ref={ logoutBtn } style={{display: "none"}}>
-      <button onClick={ logout }  className="logoutButton">Logout</button>
+        <button onClick={ logout }  className="logoutButton">Logga ut</button>
       </section>
     </section>
   )

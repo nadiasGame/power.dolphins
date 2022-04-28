@@ -28,10 +28,10 @@ async function handleLogin(){
     if(user.admin == true){
       navigate('/admin');
     }else{
-      navigate('/profile');
+      navigate('/profil');
     }
   }else{
-    alert("Login failed");
+    alert("Login funkade inte!");
   }
 }
 
@@ -39,11 +39,11 @@ async function handleLogin(){
   return(
     <section>
     <Header />
-    <h2>login</h2>
+    <h2>Inloggning</h2>
     <form onSubmit={ handleLogin } id="loginForm">
-      <input id="loginEmail" type="text" ref={ emailInput } placeholder="Email"/>
-      <input id="loginPassword" type="password" ref={ passwordInput } placeholder="Password"/>
-      <button id="loginBtn">login</button>
+      <input id="loginEmail" type="text" ref={ emailInput } placeholder="Email" autoFocus />
+      <input id="loginPassword" type="password" ref={ passwordInput } placeholder="Lösenord"/>
+      <button id="loginBtn">Logga in</button>
     </form>
     </section>
   )
