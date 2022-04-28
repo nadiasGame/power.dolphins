@@ -1,15 +1,18 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch} from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react';
+import { editUser } from '../actions/userActions';
 
 import Header from '../components/Header';
-import Book from '../components/book';
 import './Profile.css';
 
 function Profile(){
   const loggedInUser = useSelector((state) => { return state.loggedInUser }),
         books = useSelector((state) => { return state.books }),
-        navigate = useNavigate();
+        navigate = useNavigate(),
+        dispatch = useDispatch(),
+        [ editUserState, setEditUserState ] = useState(loggedInUser),
+        [ clear, setClear ] = useState('');
 
   function checkLogin(){
     if(loggedInUser === null){
@@ -37,6 +40,16 @@ function Profile(){
             </li>
   });
 
+  function newPinHandler(event){
+    setClear(event.target.value);
+    setEditUserState({...editUserState, cardPIN:event.target.value});
+  }
+
+  function changePin(){
+    dispatch(editUser(editUserState));
+    setClear('');
+  }
+
   return(
     <div>
     <Header />
@@ -47,6 +60,12 @@ function Profile(){
         <ul>
           { bookComponent }
         </ul>
+      </section>
+      <section className="changePinSection">
+        <label>Byt pinkod:
+          <input type="text" onChange={ newPinHandler } placeholder="Nya pinkoden" value={clear}/>
+        </label>
+        <button onClick={ changePin }>Byt</button>
       </section>
     </div>
   )
