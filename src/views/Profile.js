@@ -38,7 +38,7 @@ function Profile(){
   return(
     <div>
     <Header />
-      <p>Hej { loggedInUser.name }!</p>
+      <p>Hej { loggedInUser ? loggedInUser.name : "" }!</p>
 
       <section className="borrowedBooksSection" >
         <p>Dina lånade böcker</p>

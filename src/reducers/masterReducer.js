@@ -72,6 +72,9 @@ const masterReducer = (state = initialState, action) => {
         })
       }
     case 'BORROW_BOOK':
+      var currentDate=new Date();
+      currentDate.setDate(currentDate.getDate()+ 30);
+
       return {
         ...state,
         books: state.books.map(book => {
@@ -84,7 +87,27 @@ const masterReducer = (state = initialState, action) => {
         }),
         users: state.users.map(user => {
           if (user.keycardNumber === action.payload.keycardNumber) {
-            user.borrowedBooks.push(action.payload.bookId);
+            user.borrowedBooks.push({bookId: action.payload.bookId, date: currentDate})
+            return user
+          } else {
+            return user
+          }
+        })
+      }
+    case 'RETURN_BOOK':
+      return {
+        ...state,
+        books: state.books.map(book => {
+          if (book.id === action.payload.bookId) {
+            book.quantity++;
+            return book
+          } else {
+            return book
+          }
+        }),
+        users: state.users.map(user => {
+          if (user.keycardNumber === action.payload.keycardNumber) {
+            user.borrowedBooks = user.borrowedBooks.filter(book => book.bookId !== action.payload.bookId)
             return user
           } else {
             return user
