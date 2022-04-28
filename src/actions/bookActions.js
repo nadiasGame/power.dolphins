@@ -19,4 +19,11 @@ const borrowBook = (data) => {
   }
 }
 
-export { addBook, editBook, borrowBook }
+const returnBook = (data) => {
+  return {
+    type: 'RETURN_BOOK',
+    payload: data
+  }
+}
+
+export { addBook, editBook, borrowBook, returnBook }

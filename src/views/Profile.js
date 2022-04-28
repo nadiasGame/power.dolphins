@@ -22,7 +22,7 @@ function Profile(){
   return(
     <section>
     <Header />
-      <p>Hej { loggedInUser.name }!</p>
+      <p>Hej { loggedInUser ? loggedInUser.name : "" }!</p>
     </section>
   )
 }
